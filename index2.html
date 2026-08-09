@@ -1,0 +1,166 @@
+<
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAUET Tech Fest Registration</title>
+</head>
+<body>
+    <h1>BAUET Tech Fest Registration</h1>
+    <form>
+        <section>
+            <h2>Personal Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Your full name"
+                required
+            >
+            <br><br>
+            <label for="email">Institutional Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="id@bauet.ac.bd"
+                required
+            >
+            <br><br>
+            <label for="phone">Phone Number (11 digits):</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="01700000000"
+                pattern="[0-9]{11}"
+                maxlength="11"
+                required
+            >
+            <br><br>
+            <label for="studentId">Student ID (9 digits):</label>
+            <input
+                type="text"
+                id="studentId"
+                name="studentId"
+                placeholder="9 digits"
+                pattern="[0-9]{9}"
+                maxlength="9"
+                required
+            >
+            <br><br>
+        </section>
+        <section>
+            <h2>Event Registration</h2>
+
+            <label>Participant Category:</label>
+            <br>
+            <input
+                type="radio"
+                id="undergraduate"
+                name="category"
+                value="Undergraduate"
+                required
+            >
+            <label for="undergraduate">Undergraduate</label>
+            <br>
+            <input
+                type="radio"
+                id="postgraduate"
+                name="category"
+                value="Postgraduate"
+            >
+            <label for="postgraduate">Postgraduate</label>
+            <br>
+            <input
+                type="radio"
+                id="faculty"
+                name="category"
+                value="Faculty / Industry"
+            >
+            <label for="faculty">Faculty / Industry</label>
+            <br><br>
+            <label>Events (select all that apply):</label>
+            <br>
+            <input
+                type="checkbox"
+                id="hackathon"
+                name="events"
+                value="Hackathon"
+            >
+            <label for="hackathon">Hackathon</label>
+            <br>
+            <input
+                type="checkbox"
+                id="poster"
+                name="events"
+                value="Poster Presentation"
+            >
+            <label for="poster">Poster Presentation</label>
+            <br>
+            <input
+                type="checkbox"
+                id="gaming"
+                name="events"
+                value="Gaming Contest"
+            >
+            <label for="gaming">Gaming Contest</label>
+            <br>
+            <input
+                type="checkbox"
+                id="robo"
+                name="events"
+                value="Robo Race"
+            >
+            <label for="robo">Robo Race</label>
+            <br><br>
+            <label for="shirtSize">T-Shirt Size:</label>
+            <select id="shirtSize" name="shirtSize" required>
+                <option value="">-- Select --</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+            <br><br>
+        </section>
+        <section>
+            <h2>Additional Details</h2>
+            <label for="receipt">Payment Receipt (PDF or PNG):</label>
+            <input
+                type="file"
+                id="receipt"
+                name="receipt"
+                accept=".pdf,.png"
+                required
+            >
+            <br><br>
+            <label for="notes">
+                Special Requirements / Dietary Notes:
+            </label>
+            <br>
+            <textarea
+                id="notes"
+                name="notes"
+                placeholder="Leave blank if none..."
+            ></textarea>
+            <br><br>
+            <button type="submit">
+                Submit Registration
+            </button>
+            <button type="reset">
+                Clear Form
+            </button>
+        </section>
+        <p>
+            <small>
+                Deadline: 5 August 2026 — BAUET Tech Fest Committee
+            </small>
+        </p>
+    </form>
+</body>
+</html>
