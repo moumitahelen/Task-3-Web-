@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Card Explorer</title>
+    <link rel="stylesheet" href="style0.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Pokémon Card Explorer</h1>
+
+        <p class="description">
+            Search for a Pokémon to see its artwork, type, measurements,
+            abilities and base stats.
+        </p>
+
+        <form id="searchForm">
+            <input
+                type="text"
+                id="pokemonInput"
+                placeholder="Enter Pokémon name or ID"
+                required
+            >
+
+            <button type="submit">Search</button>
+        </form>
+
+        <h3 class="quick-title">Quick Search</h3>
+
+        <div class="quick-search">
+
+            <button class="quick-btn" data-name="pikachu">Pikachu</button>
+            <button class="quick-btn" data-name="charizard">Charizard</button>
+            <button class="quick-btn" data-name="bulbasaur">Bulbasaur</button>
+            <button class="quick-btn" data-name="squirtle">Squirtle</button>
+
+            <button class="quick-btn" data-name="eevee">Eevee</button>
+            <button class="quick-btn" data-name="mewtwo">Mewtwo</button>
+            <button class="quick-btn" data-name="gengar">Gengar</button>
+            <button class="quick-btn" data-name="lucario">Lucario</button>
+
+            <button class="quick-btn" data-name="greninja">Greninja</button>
+            <button class="quick-btn" data-name="snorlax">Snorlax</button>
+            <button class="quick-btn" data-name="dragonite">Dragonite</button>
+            <button class="quick-btn" data-name="meowth">Meowth</button>
+
+        </div>
+
+        <p id="status"></p>
+
+        <div id="pokemonCard" class="pokemon-card">
+
+            <div class="image-section">
+                <img id="pokemonImage" src="" alt="Pokemon">
+            </div>
+
+            <div class="pokemon-info">
+
+                <h2 id="pokemonName">Pokémon Name</h2>
+
+                <p id="pokemonId">ID: -</p>
+
+                <div id="pokemonTypes" class="types"></div>
+
+                <div class="basic-info">
+                    <p><strong>Height:</strong> <span id="height">-</span></p>
+                    <p><strong>Weight:</strong> <span id="weight">-</span></p>
+                    <p><strong>Base Experience:</strong> <span id="experience">-</span></p>
+                </div>
+
+                <h3>Abilities</h3>
+                <ul id="abilities"></ul>
+
+                <h3>Base Stats</h3>
+                <div id="stats"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script0.js"></script>
+
+</body>
+</html>
